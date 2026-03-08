@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos Curiosos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f1a;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #a78bfa;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #6b7280;
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #2d2d44;
+      border-radius: 16px;
+      padding: 28px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #a78bfa;
+    }
+
+    .card .icon {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      color: #c4b5fd;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.92rem;
+      color: #9ca3af;
+      line-height: 1.6;
+    }
+
+    .card .tag {
+      display: inline-block;
+      margin-top: 14px;
+      background: #2d2d44;
+      color: #a78bfa;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    .stat-bar {
+      margin-top: 16px;
+      background: #2d2d44;
+      border-radius: 999px;
+      height: 6px;
+      overflow: hidden;
+    }
+
+    .stat-bar .fill {
+      height: 100%;
+      background: linear-gradient(90deg, #7c3aed, #a78bfa);
+      border-radius: 999px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #374151;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Datos Curiosos del Universo</h1>
+    <p>Una coleccion aleatoria de hechos interesantes</p>
+  </header>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="icon">🌌</div>
+      <h2>El universo observable</h2>
+      <p>El universo tiene aproximadamente 93 mil millones de años luz de diámetro. Contiene más de 2 billones de galaxias, cada una con cientos de miles de millones de estrellas.</p>
+      <span class="tag">Astronomia</span>
+      <div class="stat-bar"><div class="fill" style="width: 95%"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="icon">🐙</div>
+      <h2>El pulpo y sus cerebros</h2>
+      <p>Los pulpos tienen 9 cerebros: uno central y uno en cada uno de sus 8 tentáculos. Además, dos tercios de sus neuronas se encuentran en los brazos, no en la cabeza.</p>
+      <span class="tag">Biologia</span>
+      <div class="stat-bar"><div class="fill" style="width: 72%"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h2>La velocidad de la luz</h2>
+      <p>La luz viaja a 299,792 km por segundo. A esa velocidad, podría rodear la Tierra 7.5 veces en un solo segundo. Desde el Sol, tarda ~8 minutos en llegar a nosotros.</p>
+      <span class="tag">Fisica</span>
+      <div class="stat-bar"><div class="fill" style="width: 100%"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌊</div>
+      <h2>Los oceanos inexplorados</h2>
+      <p>Menos del 20% de los océanos de la Tierra han sido explorados. El punto más profundo, la Fosa de las Marianas, llega a 11,034 metros bajo el nivel del mar.</p>
+      <span class="tag">Oceanografia</span>
+      <div class="stat-bar"><div class="fill" style="width: 20%"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="icon">🧠</div>
+      <h2>El cerebro humano</h2>
+      <p>El cerebro humano contiene aproximadamente 86 mil millones de neuronas. Genera alrededor de 70,000 pensamientos por día y consume el 20% de toda la energía del cuerpo.</p>
+      <span class="tag">Neurociencia</span>
+      <div class="stat-bar"><div class="fill" style="width: 86%"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌋</div>
+      <h2>Volcan en Io</h2>
+      <p>Io, luna de Júpiter, es el cuerpo geológicamente más activo del sistema solar. Su volcán Pele expulsa material hasta 300 km de altura, cubriendo zonas del tamaño de Texas.</p>
+      <span class="tag">Geologia espacial</span>
+      <div class="stat-bar"><div class="fill" style="width: 60%"></div></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Generado el 8 de marzo de 2026 &mdash; Informacion con fines educativos</p>
+  </footer>
+
+</body>
+</html>
